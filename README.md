@@ -1,5 +1,7 @@
 # AARAV ESTATES – Real Estate Builder & Property Agency Demo
 
+**Live demo:** https://aaravestates-demo.pages.dev
+
 A premium, responsive single-page website for a **fictional** real estate developer and property consultancy based in Sangli, Maharashtra.
 
 Built with plain **HTML5, CSS3 and vanilla JavaScript**: no frameworks, no build step and no backend. Open `index.html` in a browser to run it.
