@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ SEO ============ -->
+  <title>AARAV ESTATES | Apartments, Villas, Plots &amp; Commercial Property in Sangli</title>
+  <meta name="description" content="AARAV ESTATES helps you discover thoughtfully designed apartments, villas, residential plots and commercial spaces in Sangli, Miraj, Kolhapur and Pune. Enquire or schedule a site visit today.">
+  <meta name="keywords" content="real estate Sangli, flats in Sangli, apartments Miraj, villas Kolhapur, plots near Sangli, commercial property Sangli, property consultant Maharashtra">
+  <meta name="theme-color" content="#142B3B">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Open Graph (replace URL/image before launch) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AARAV ESTATES | Finding Spaces. Creating Futures.">
+  <meta property="og:description" content="Discover thoughtfully designed homes, premium properties and investment opportunities in and around Sangli, Maharashtra.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=75">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ============ Fonts & Icons ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ============ Structured data ============
+       DEMO PLACEHOLDER: only city/state are real. Add verified phone,
+       street address, URL and geo before a client launch. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "AARAV ESTATES",
+    "slogan": "Finding Spaces. Creating Futures.",
+    "description": "Demo website for a fictional real estate developer and property consultancy. All details are placeholders.",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=75",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sangli",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["Sangli", "Miraj", "Kolhapur", "Pune"]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================================================
+       HEADER / NAVIGATION
+       ========================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="AARAV ESTATES home">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M10 50 L32 12 L54 50" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M21 50 V38 H43 V50" fill="none" stroke="currentColor" stroke-width="3"/>
+          <line x1="18" y1="40" x2="46" y2="40" stroke="var(--gold)" stroke-width="3"/>
+        </svg>
+        <span class="logo-text">
+          <strong>AARAV</strong>
+          <small>ESTATES</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#properties" class="nav-link">Properties</a></li>
+          <li><a href="#residential" class="nav-link">Residential</a></li>
+          <li><a href="#commercial" class="nav-link">Commercial</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#site-visit" class="btn btn-gold nav-cta-mobile">Schedule a Site Visit</a>
+      </nav>
+
+      <a href="#site-visit" class="btn btn-gold nav-cta">Schedule a Site Visit</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section class="hero" id="home">
+      <div class="hero-bg" role="img" aria-label="Contemporary residential villa with warm evening lighting"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow eyebrow-light reveal">Sangli &middot; Miraj &middot; Kolhapur &middot; Pune</p>
+        <h1 class="hero-title reveal">Find a Place You'll Love to <em>Call Home.</em></h1>
+        <p class="hero-text reveal">Discover thoughtfully designed homes, premium properties and investment opportunities with AARAV ESTATES.</p>
+        <div class="hero-actions reveal">
+          <a href="#properties" class="btn btn-gold btn-lg">Explore Properties <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#site-visit" class="btn btn-outline-light btn-lg">Schedule a Site Visit</a>
+        </div>
+      </div>
+
+      <!-- Property search -->
+      <div class="container">
+        <form class="search-panel reveal" id="searchForm" aria-label="Search properties">
+          <div class="search-field">
+            <label for="searchType"><i class="fa-solid fa-building"></i> Property Type</label>
+            <select id="searchType" name="type">
+              <option value="">Any type</option>
+              <option value="Apartments">Apartments</option>
+              <option value="Villas">Villas</option>
+              <option value="Residential Plots">Residential Plots</option>
+              <option value="Commercial Spaces">Commercial Spaces</option>
+              <option value="Office Spaces">Office Spaces</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="searchLocation"><i class="fa-solid fa-location-dot"></i> Location</label>
+            <select id="searchLocation" name="location">
+              <option value="">Any location</option>
+              <option value="Sangli">Sangli</option>
+              <option value="Miraj">Miraj</option>
+              <option value="Kolhapur">Kolhapur</option>
+              <option value="Pune">Pune</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="searchBudget"><i class="fa-solid fa-indian-rupee-sign"></i> Budget Range</label>
+            <select id="searchBudget" name="budget">
+              <option value="">Any budget</option>
+              <option value="0-30">Up to ₹30 Lakhs</option>
+              <option value="30-60">₹30 – 60 Lakhs</option>
+              <option value="60-100">₹60 Lakhs – 1 Crore</option>
+              <option value="100-9999">Above ₹1 Crore</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-navy search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i> Search Properties
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         COMPANY HIGHLIGHTS  (DEMO FIGURES – replace before launch)
+         ========================================================= -->
+    <section class="highlights" aria-label="Company highlights">
+      <div class="container highlights-grid">
+        <div class="stat reveal">
+          <span class="stat-num"><span class="counter" data-count="15">0</span>+</span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num"><span class="counter" data-count="25">0</span>+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num"><span class="counter" data-count="500">0</span>+</span>
+          <span class="stat-label">Happy Families</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num"><span class="counter" data-count="10">0</span>+</span>
+          <span class="stat-label">Prime Locations</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FEATURED PROPERTIES  (cards rendered from PROPERTIES in js/script.js)
+         ========================================================= -->
+    <section class="section properties" id="properties">
+      <div class="container">
+        <div class="section-head split-head">
+          <div>
+            <p class="eyebrow reveal">Featured Properties</p>
+            <h2 class="section-title reveal">Homes and spaces, <em>handpicked</em> for you.</h2>
+          </div>
+          <p class="section-lead reveal">From city apartments to quiet plots and business addresses, explore projects selected for location, design and long-term value.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Filter properties by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Properties</button>
+          <button class="filter-btn" data-filter="apartment" role="tab" aria-selected="false">Apartments</button>
+          <button class="filter-btn" data-filter="villa" role="tab" aria-selected="false">Villas</button>
+          <button class="filter-btn" data-filter="plot" role="tab" aria-selected="false">Plots</button>
+          <button class="filter-btn" data-filter="commercial" role="tab" aria-selected="false">Commercial</button>
+        </div>
+
+        <!-- Search summary (shown after a hero search) -->
+        <div class="search-summary" id="searchSummary" hidden>
+          <p id="searchSummaryText"></p>
+          <button type="button" class="link-btn" id="clearSearch"><i class="fa-solid fa-xmark"></i> Clear search</button>
+        </div>
+
+        <div class="property-grid" id="propertyGrid" aria-live="polite"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <i class="fa-regular fa-folder-open"></i>
+          <h3>No matching properties right now</h3>
+          <p>Try a different combination, or tell us what you need and our team will suggest options.</p>
+          <div class="empty-actions">
+            <button type="button" class="btn btn-navy" id="resetFilters">Show All Properties</button>
+            <a href="#enquiry" class="btn btn-outline">Send an Enquiry</a>
+          </div>
+        </div>
+
+        <noscript><p class="noscript-note">Please enable JavaScript to view property listings.</p></noscript>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         RESIDENTIAL
+         ========================================================= -->
+    <section class="section residential" id="residential">
+      <div class="container residential-grid">
+        <div class="residential-media reveal">
+          <img class="res-img-main" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=75" alt="Contemporary residence with dark facade and large glazed windows" loading="lazy" width="1000" height="1200">
+          <img class="res-img-small" src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=600&q=75" alt="Modern residential apartment towers with balconies" loading="lazy" width="600" height="700">
+          <div class="res-badge">
+            <span>2 &amp; 3 BHK</span>
+            <small>Residences</small>
+          </div>
+        </div>
+
+        <div class="residential-copy">
+          <p class="eyebrow reveal">Residential Living</p>
+          <h2 class="section-title reveal">Homes designed around <em>the way families live.</em></h2>
+          <p class="reveal">Every residential project we present is chosen for how it feels to live in day after day: natural light, practical layouts, calm surroundings and the everyday conveniences a family needs close by.</p>
+
+          <ul class="feature-list">
+            <li class="reveal"><i class="fa-solid fa-compass-drafting"></i><div><h3>Thoughtfully designed apartments</h3><p>Plans that minimise wasted space and maximise light and ventilation.</p></div></li>
+            <li class="reveal"><i class="fa-solid fa-up-right-and-down-left-from-center"></i><div><h3>Spacious layouts</h3><p>Generous living areas, usable balconies and well-proportioned bedrooms.</p></div></li>
+            <li class="reveal"><i class="fa-solid fa-building"></i><div><h3>Modern architecture</h3><p>Clean, contemporary elevations that age gracefully.</p></div></li>
+            <li class="reveal"><i class="fa-solid fa-children"></i><div><h3>Family-friendly amenities</h3><p>Play areas, landscaped open spaces and community facilities.</p></div></li>
+            <li class="reveal"><i class="fa-solid fa-map-location-dot"></i><div><h3>Convenient locations</h3><p>Neighbourhoods close to schools, markets and daily essentials.</p></div></li>
+            <li class="reveal"><i class="fa-solid fa-trowel-bricks"></i><div><h3>Quality construction</h3><p>Attention to materials, finishes and detailing at every stage.</p></div></li>
+          </ul>
+
+          <button type="button" class="btn btn-navy reveal" data-show-category="apartment">View Residential Projects <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         COMMERCIAL
+         ========================================================= -->
+    <section class="section commercial" id="commercial">
+      <div class="commercial-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head split-head light">
+          <div>
+            <p class="eyebrow eyebrow-light reveal">Commercial Real Estate</p>
+            <h2 class="section-title reveal">Business addresses that <em>work as hard as you do.</em></h2>
+          </div>
+          <p class="section-lead reveal">Whether you are setting up a practice, expanding a retail brand or building a rental portfolio, we help you evaluate commercial spaces with clarity.</p>
+        </div>
+
+        <div class="commercial-grid">
+          <article class="com-card reveal">
+            <span class="com-num">01</span>
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Office Spaces</h3>
+            <p>Efficient, ready-to-fit-out offices for professionals, start-ups and growing teams.</p>
+          </article>
+          <article class="com-card reveal">
+            <span class="com-num">02</span>
+            <i class="fa-solid fa-store"></i>
+            <h3>Retail Shops</h3>
+            <p>High-visibility frontage on active streets where customers already gather.</p>
+          </article>
+          <article class="com-card reveal">
+            <span class="com-num">03</span>
+            <i class="fa-solid fa-city"></i>
+            <h3>Commercial Complexes</h3>
+            <p>Mixed-use developments combining offices, showrooms and services.</p>
+          </article>
+          <article class="com-card reveal">
+            <span class="com-num">04</span>
+            <i class="fa-solid fa-industry"></i>
+            <h3>Business Parks</h3>
+            <p>Planned campuses with shared infrastructure, parking and room to grow.</p>
+          </article>
+          <article class="com-card reveal">
+            <span class="com-num">05</span>
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Investment Opportunities</h3>
+            <p>Leased and pre-leased options for investors seeking steady, long-term assets.</p>
+          </article>
+          <article class="com-card com-card-cta reveal">
+            <h3>Looking for a business space?</h3>
+            <p>See our current commercial listings or speak with a consultant.</p>
+            <button type="button" class="btn btn-gold" data-show-category="commercial">Explore Commercial <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         WHY CHOOSE US
+         ========================================================= -->
+    <section class="section why" id="why-us">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Why Choose Us</p>
+          <h2 class="section-title reveal">A property partner you can <em>rely on.</em></h2>
+          <p class="section-lead reveal">Buying property is one of life's biggest decisions. We make the journey clear, considered and comfortable.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-handshake"></i></div><h3>Trusted Property Guidance</h3><p>Honest, practical advice based on your needs, budget and long-term goals.</p></div>
+          <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-comments"></i></div><h3>Transparent Communication</h3><p>Clear information on pricing, timelines and process, with no surprises along the way.</p></div>
+          <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-location-crosshairs"></i></div><h3>Carefully Selected Locations</h3><p>Projects in neighbourhoods chosen for connectivity, livability and growth potential.</p></div>
+          <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-gem"></i></div><h3>Quality-Focused Projects</h3><p>We focus on thoughtful planning, sound materials and careful finishing.</p></div>
+          <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-route"></i></div><h3>End-to-End Assistance</h3><p>From the first conversation to handover, one team stays with you throughout.</p></div>
+          <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-heart"></i></div><h3>Customer-First Approach</h3><p>Your comfort and confidence matter more to us than closing quickly.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT US
+         ========================================================= -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=75" alt="House keys being handed over to a new homeowner" loading="lazy" width="1000" height="1100">
+          <div class="about-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Finding Spaces.<br>Creating Futures.</p>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow reveal">About AARAV ESTATES</p>
+          <h2 class="section-title reveal">Building More Than Properties. <em>Building Trust.</em></h2>
+          <p class="reveal">AARAV ESTATES is a Sangli-based real estate developer and property consultancy. We help families, professionals and investors find the right property through patient guidance, transparent communication and service that puts the customer first.</p>
+          <p class="reveal">Our team listens before we recommend. We take time to understand how you live and work, shortlist options that genuinely fit, walk you through every site and stay beside you through paperwork and possession.</p>
+
+          <div class="mv-grid">
+            <div class="mv-card reveal">
+              <i class="fa-solid fa-bullseye"></i>
+              <h3>Our Mission</h3>
+              <p>To make property buying simple, honest and rewarding by matching every customer with a space that suits their life and budget.</p>
+            </div>
+            <div class="mv-card reveal">
+              <i class="fa-solid fa-eye"></i>
+              <h3>Our Vision</h3>
+              <p>To be the most trusted name in real estate across South-West Maharashtra, known for the relationships we build as much as the properties we offer.</p>
+            </div>
+          </div>
+
+          <a href="#services" class="btn btn-navy reveal">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SERVICES
+         ========================================================= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head split-head">
+          <div>
+            <p class="eyebrow reveal">Our Services</p>
+            <h2 class="section-title reveal">Complete property support, <em>under one roof.</em></h2>
+          </div>
+          <p class="section-lead reveal">Whether you're buying, selling or investing, our consultants guide each step with local knowledge and care.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal"><i class="fa-solid fa-house-chimney"></i><h3>Residential Property Sales</h3><p>Apartments, villas and homes matched to your lifestyle and budget.</p></article>
+          <article class="service-card reveal"><i class="fa-solid fa-building-columns"></i><h3>Commercial Property Sales</h3><p>Offices, shops and business spaces in active commercial zones.</p></article>
+          <article class="service-card reveal"><i class="fa-solid fa-key"></i><h3>Property Buying Assistance</h3><p>Shortlisting, comparison and negotiation support for confident decisions.</p></article>
+          <article class="service-card reveal"><i class="fa-solid fa-sign-hanging"></i><h3>Property Selling Assistance</h3><p>Positioning, presentation and buyer outreach for your property.</p></article>
+          <article class="service-card reveal"><i class="fa-solid fa-map"></i><h3>Land &amp; Plot Consultation</h3><p>Guidance on plot selection, layouts and suitability for your plans.</p></article>
+          <article class="service-card reveal"><i class="fa-solid fa-chart-pie"></i><h3>Real Estate Investment Guidance</h3><p>Help evaluating options for rental income and long-term growth.</p></article>
+          <article class="service-card reveal"><i class="fa-solid fa-car-side"></i><h3>Site Visit Coordination</h3><p>Planned, accompanied visits at times that suit you and your family.</p></article>
+          <article class="service-card reveal"><i class="fa-solid fa-user-tie"></i><h3>Property Consultation</h3><p>One-on-one sessions to clarify needs, budget and next steps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         BUYING PROCESS TIMELINE
+         ========================================================= -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">How It Works</p>
+          <h2 class="section-title reveal">Your property journey, <em>step by step.</em></h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-step reveal"><span class="tl-dot">1</span><div class="tl-body"><i class="fa-solid fa-clipboard-list"></i><h3>Understand Your Requirements</h3><p>We discuss your needs, preferred areas and budget.</p></div></li>
+          <li class="tl-step reveal"><span class="tl-dot">2</span><div class="tl-body"><i class="fa-solid fa-magnifying-glass-location"></i><h3>Explore Suitable Properties</h3><p>A curated shortlist that truly fits your brief.</p></div></li>
+          <li class="tl-step reveal"><span class="tl-dot">3</span><div class="tl-body"><i class="fa-solid fa-calendar-check"></i><h3>Arrange Property Visits</h3><p>Accompanied site visits at your convenience.</p></div></li>
+          <li class="tl-step reveal"><span class="tl-dot">4</span><div class="tl-body"><i class="fa-solid fa-scale-balanced"></i><h3>Compare Your Options</h3><p>Side-by-side clarity on price, layout and location.</p></div></li>
+          <li class="tl-step reveal"><span class="tl-dot">5</span><div class="tl-body"><i class="fa-solid fa-file-signature"></i><h3>Complete Documentation</h3><p>Support with paperwork and coordination.</p></div></li>
+          <li class="tl-step reveal"><span class="tl-dot">6</span><div class="tl-body"><i class="fa-solid fa-house-circle-check"></i><h3>Move Into Your New Property</h3><p>Handover, keys and a warm welcome home.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         GALLERY  (click to open lightbox)
+         ========================================================= -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head split-head">
+          <div>
+            <p class="eyebrow reveal">Gallery</p>
+            <h2 class="section-title reveal">A closer look at <em>spaces we love.</em></h2>
+          </div>
+          <p class="section-lead reveal">Architecture, interiors, amenities and work in progress. Select any image to view it larger.</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <button class="g-item g-tall reveal" data-caption="Exterior Architecture"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=75" alt="Modern home exterior with pool at dusk" loading="lazy"><span>Exterior Architecture</span></button>
+          <button class="g-item reveal" data-caption="Interior Living Room"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=75" alt="Elegant living room with neutral tones" loading="lazy"><span>Living Room</span></button>
+          <button class="g-item reveal" data-caption="Master Bedroom"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=75" alt="Calm bedroom with soft lighting" loading="lazy"><span>Bedroom</span></button>
+          <button class="g-item g-wide reveal" data-caption="Modular Kitchen"><img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1200&q=75" alt="Modern modular kitchen with island counter" loading="lazy"><span>Kitchen</span></button>
+          <button class="g-item reveal" data-caption="Landscaped Garden"><img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=900&q=75" alt="Landscaped garden beside a home" loading="lazy"><span>Landscaped Garden</span></button>
+          <button class="g-item reveal" data-caption="Amenities – Swimming Pool"><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=900&q=75" alt="Residential swimming pool amenity" loading="lazy"><span>Amenities</span></button>
+          <button class="g-item g-tall reveal" data-caption="Construction Progress"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=75" alt="Building under construction with crane" loading="lazy"><span>Construction Progress</span></button>
+          <button class="g-item reveal" data-caption="Contemporary Interiors"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=75" alt="Contemporary interior with lounge chair" loading="lazy"><span>Interiors</span></button>
+          <button class="g-item reveal" data-caption="Modern Residence"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=900&q=75" alt="Modern two-storey residence exterior" loading="lazy"><span>Exterior</span></button>
+          <button class="g-item reveal" data-caption="Guest Bedroom"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=75" alt="Guest bedroom with warm wood accents" loading="lazy"><span>Guest Bedroom</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         LOCATION ADVANTAGES  (general, illustrative – no specific distance claims)
+         ========================================================= -->
+    <section class="section locations" id="locations">
+      <div class="container">
+        <div class="section-head center light">
+          <p class="eyebrow eyebrow-light reveal">Location Advantages</p>
+          <h2 class="section-title reveal">Rooted in Sangli. <em>Growing across Maharashtra.</em></h2>
+          <p class="section-lead reveal">Each city we work in offers its own blend of community, opportunity and lifestyle.</p>
+        </div>
+
+        <div class="loc-grid">
+          <article class="loc-card reveal">
+            <span class="loc-index">01</span>
+            <h3>Sangli</h3>
+            <p>A well-established city with a strong community, familiar markets, schools and healthcare, and a steady demand for quality housing.</p>
+            <button type="button" class="link-btn light" data-search-location="Sangli">View properties <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+          <article class="loc-card reveal">
+            <span class="loc-index">02</span>
+            <h3>Miraj</h3>
+            <p>Sangli's twin city, known for its healthcare institutions and rail connectivity, offering value-focused homes close to daily essentials.</p>
+            <button type="button" class="link-btn light" data-search-location="Miraj">View properties <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+          <article class="loc-card reveal">
+            <span class="loc-index">03</span>
+            <h3>Kolhapur</h3>
+            <p>A culturally rich, growing city with a strong business base, suited to premium independent homes and lifestyle-led living.</p>
+            <button type="button" class="link-btn light" data-search-location="Kolhapur">View properties <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+          <article class="loc-card reveal">
+            <span class="loc-index">04</span>
+            <h3>Pune</h3>
+            <p>A major education and employment hub, attractive to working professionals and buyers looking for long-term appreciation.</p>
+            <button type="button" class="link-btn light" data-search-location="Pune">View properties <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TESTIMONIALS  (SAMPLE REVIEWS – demonstration content only)
+         ========================================================= -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Client Stories</p>
+          <h2 class="section-title reveal">What homeowners <em>tell us.</em></h2>
+          <p class="demo-note reveal"><i class="fa-solid fa-circle-info"></i> Sample reviews shown for demonstration purposes only.</p>
+        </div>
+
+        <div class="carousel reveal" id="testimonialCarousel" aria-roledescription="carousel" aria-label="Customer testimonials">
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack">
+              <article class="t-card" aria-roledescription="slide">
+                <div class="t-stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"The team understood exactly what our family needed. They showed us only relevant options and patiently answered every question. We moved in feeling completely confident."</blockquote>
+                <div class="t-author"><span class="t-avatar">RK</span><div><strong>Rohan Kulkarni</strong><small>3 BHK, The Grand Residency &middot; Sangli</small></div></div>
+              </article>
+              <article class="t-card" aria-roledescription="slide">
+                <div class="t-stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"As first-time buyers we were nervous about the paperwork. Their consultant explained each step clearly and coordinated everything. A genuinely smooth experience."</blockquote>
+                <div class="t-author"><span class="t-avatar">SP</span><div><strong>Sneha Patil</strong><small>2 BHK, Aarav Heights &middot; Miraj</small></div></div>
+              </article>
+              <article class="t-card" aria-roledescription="slide">
+                <div class="t-stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"I was looking for a plot to build our family home. They walked me through several layouts and helped me compare them honestly. Very professional."</blockquote>
+                <div class="t-author"><span class="t-avatar">AD</span><div><strong>Amit Deshmukh</strong><small>Residential Plot, Green Valley &middot; Near Sangli</small></div></div>
+              </article>
+              <article class="t-card" aria-roledescription="slide">
+                <div class="t-stars" aria-label="4 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <blockquote>"We needed an office for our CA practice in a central location. The team understood our requirements quickly and arranged visits around our schedule."</blockquote>
+                <div class="t-author"><span class="t-avatar">PJ</span><div><strong>Priya Joshi</strong><small>Office Space, Business Square &middot; Sangli</small></div></div>
+              </article>
+              <article class="t-card" aria-roledescription="slide">
+                <div class="t-stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"Transparent from day one. No pressure, just clear information and good advice. We'd happily recommend AARAV ESTATES to friends and family."</blockquote>
+                <div class="t-author"><span class="t-avatar">VS</span><div><strong>Vikram Shinde</strong><small>3 BHK, Lakeview Homes &middot; Pune</small></div></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button type="button" class="c-btn" id="prevSlide" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="c-dots" id="carouselDots" role="tablist" aria-label="Choose testimonial"></div>
+            <button type="button" class="c-btn" id="nextSlide" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FAQ
+         ========================================================= -->
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <p class="eyebrow reveal">FAQ</p>
+          <h2 class="section-title reveal">Questions buyers <em>often ask.</em></h2>
+          <p class="reveal">Can't find what you're looking for? Our consultants are happy to help.</p>
+          <a href="#contact" class="btn btn-outline reveal">Contact Our Team</a>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="acc-item reveal">
+            <h3><button class="acc-trigger" aria-expanded="false" aria-controls="faq1" id="faq1-btn">How can I schedule a property visit?<i class="fa-solid fa-plus"></i></button></h3>
+            <div class="acc-panel" id="faq1" role="region" aria-labelledby="faq1-btn"><p>Use the "Schedule a Site Visit" form on this page, choose a property and your preferred date and time. Our team will call you to confirm the visit. You can also reach us on WhatsApp.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <h3><button class="acc-trigger" aria-expanded="false" aria-controls="faq2" id="faq2-btn">Can I explore properties within a specific budget?<i class="fa-solid fa-plus"></i></button></h3>
+            <div class="acc-panel" id="faq2" role="region" aria-labelledby="faq2-btn"><p>Yes. Use the property search at the top of the page to filter by budget, type and location, or share your budget in the enquiry form and we'll shortlist suitable options.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <h3><button class="acc-trigger" aria-expanded="false" aria-controls="faq3" id="faq3-btn">Do you offer residential and commercial properties?<i class="fa-solid fa-plus"></i></button></h3>
+            <div class="acc-panel" id="faq3" role="region" aria-labelledby="faq3-btn"><p>We do. Our portfolio includes apartments, villas and residential plots, as well as office spaces, retail shops and other commercial properties.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <h3><button class="acc-trigger" aria-expanded="false" aria-controls="faq4" id="faq4-btn">Can I get assistance with property documentation?<i class="fa-solid fa-plus"></i></button></h3>
+            <div class="acc-panel" id="faq4" role="region" aria-labelledby="faq4-btn"><p>Our team guides you through the documentation process and coordinates with the relevant parties. For legal opinions we recommend consulting an independent legal professional.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <h3><button class="acc-trigger" aria-expanded="false" aria-controls="faq5" id="faq5-btn">Are home loans available?<i class="fa-solid fa-plus"></i></button></h3>
+            <div class="acc-panel" id="faq5" role="region" aria-labelledby="faq5-btn"><p>Home loans are offered by banks and financial institutions, subject to their eligibility criteria. We can help you understand the general process and connect you with lenders; final approval rests with the lender.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <h3><button class="acc-trigger" aria-expanded="false" aria-controls="faq6" id="faq6-btn">Can I enquire about upcoming projects?<i class="fa-solid fa-plus"></i></button></h3>
+            <div class="acc-panel" id="faq6" role="region" aria-labelledby="faq6-btn"><p>Absolutely. Select the project or mention "upcoming projects" in the enquiry form and we'll share details as soon as they're available.</p></div>
+          </div>
+          <div class="acc-item reveal">
+            <h3><button class="acc-trigger" aria-expanded="false" aria-controls="faq7" id="faq7-btn">How can I contact your property consultant?<i class="fa-solid fa-plus"></i></button></h3>
+            <div class="acc-panel" id="faq7" role="region" aria-labelledby="faq7-btn"><p>Send an enquiry through this website, message us on WhatsApp, or visit our Sangli office during business hours. Contact details are listed in the Contact section below.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ENQUIRY FORM  (frontend demo – nothing is sent or stored)
+         ========================================================= -->
+    <section class="section enquiry" id="enquiry">
+      <div class="container enquiry-grid">
+        <div class="enquiry-copy">
+          <p class="eyebrow eyebrow-light reveal">Property Enquiry</p>
+          <h2 class="section-title reveal">Your Dream Property Could Be <em>One Enquiry Away.</em></h2>
+          <p class="reveal">Tell us what you're looking for. Our property team will help you explore suitable options.</p>
+          <ul class="enquiry-points">
+            <li class="reveal"><i class="fa-solid fa-check"></i> Personalised shortlist within your budget</li>
+            <li class="reveal"><i class="fa-solid fa-check"></i> No-obligation consultation</li>
+            <li class="reveal"><i class="fa-solid fa-check"></i> Help with visits, comparison and paperwork</li>
+          </ul>
+          <button type="button" class="btn btn-whatsapp reveal js-whatsapp" data-wa-message="Hello AARAV ESTATES, I'd like to know more about your available properties.">
+            <i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp
+          </button>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="enquiryForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="enqName">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="enqName" name="name" autocomplete="name" required placeholder="Your full name">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="enqMobile">Mobile Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="enqMobile" name="mobile" autocomplete="tel" inputmode="numeric" required placeholder="10-digit mobile number">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="enqEmail">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="enqEmail" name="email" autocomplete="email" required placeholder="you@example.com">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="enqInterest">Interested In <span aria-hidden="true">*</span></label>
+                <select id="enqInterest" name="interest" required>
+                  <option value="">Select an option</option>
+                  <option>Apartments</option>
+                  <option>Villas</option>
+                  <option>Residential Plots</option>
+                  <option>Commercial Spaces</option>
+                  <option>Office Spaces</option>
+                  <option>Investment Guidance</option>
+                </select>
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="enqLocation">Preferred Location</label>
+                <select id="enqLocation" name="location">
+                  <option value="">No preference</option>
+                  <option>Sangli</option>
+                  <option>Miraj</option>
+                  <option>Kolhapur</option>
+                  <option>Pune</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="enqBudget">Budget Range</label>
+                <select id="enqBudget" name="budget">
+                  <option value="">Select budget</option>
+                  <option>Up to ₹30 Lakhs</option>
+                  <option>₹30 – 60 Lakhs</option>
+                  <option>₹60 Lakhs – 1 Crore</option>
+                  <option>Above ₹1 Crore</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="enqMessage">Message</label>
+              <textarea id="enqMessage" name="message" rows="4" placeholder="Tell us about your requirements"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-block btn-lg">Submit Enquiry <i class="fa-solid fa-paper-plane"></i></button>
+            <p class="form-note"><i class="fa-solid fa-lock"></i> Demo form: your details are not sent or stored.</p>
+          </form>
+
+          <div class="form-success" id="enquirySuccess" hidden tabindex="-1">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Thank you<span class="success-name"></span>!</h3>
+            <p>Your enquiry has been received. A property consultant will get in touch with you shortly.</p>
+            <p class="form-note">This is a demo. No data was sent or stored.</p>
+            <button type="button" class="btn btn-outline" data-reset-form="enquiryForm">Send another enquiry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SCHEDULE A SITE VISIT  (frontend demo)
+         ========================================================= -->
+    <section class="section site-visit" id="site-visit">
+      <div class="container visit-grid">
+        <div class="visit-media reveal">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=75" alt="Spacious living and dining area in a show apartment" loading="lazy" width="1000" height="1200">
+          <div class="visit-info">
+            <h3>Visit at your convenience</h3>
+            <ul>
+              <li><i class="fa-regular fa-calendar"></i> Choose a date that suits you</li>
+              <li><i class="fa-solid fa-user-tie"></i> Accompanied by a consultant</li>
+              <li><i class="fa-solid fa-people-roof"></i> Bring your family along</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-card form-card-light reveal">
+          <p class="eyebrow">Site Visit</p>
+          <h2 class="section-title small">Schedule a <em>Site Visit</em></h2>
+          <p class="form-intro">See the space in person. Pick a property and a time, and we'll confirm your visit.</p>
+
+          <form id="visitForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="visitName">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="visitName" name="name" autocomplete="name" required placeholder="Your name">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="visitMobile">Mobile Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="visitMobile" name="mobile" autocomplete="tel" inputmode="numeric" required placeholder="10-digit mobile number">
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="visitProperty">Select Property <span aria-hidden="true">*</span></label>
+              <select id="visitProperty" name="property" required>
+                <option value="">Choose a property</option>
+                <!-- populated from PROPERTIES in script.js -->
+              </select>
+              <small class="error-msg" aria-live="polite"></small>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="visitDate">Preferred Date <span aria-hidden="true">*</span></label>
+                <input type="date" id="visitDate" name="date" required>
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="visitTime">Preferred Time <span aria-hidden="true">*</span></label>
+                <select id="visitTime" name="time" required>
+                  <option value="">Select a time</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>3:00 PM</option>
+                  <option>4:00 PM</option>
+                  <option>5:00 PM</option>
+                </select>
+                <small class="error-msg" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="visitMessage">Additional Message</label>
+              <textarea id="visitMessage" name="message" rows="3" placeholder="Anything we should know before your visit?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-navy btn-block btn-lg">Book Site Visit <i class="fa-solid fa-calendar-check"></i></button>
+            <p class="form-note"><i class="fa-solid fa-lock"></i> Demo form: your details are not sent or stored.</p>
+          </form>
+
+          <div class="form-success" id="visitSuccess" hidden tabindex="-1">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Visit requested!</h3>
+            <p id="visitSuccessText">We'll call you to confirm your site visit.</p>
+            <p class="form-note">This is a demo. No data was sent or stored.</p>
+            <button type="button" class="btn btn-outline" data-reset-form="visitForm">Book another visit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT  (all details are placeholders)
+         ========================================================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="section-title reveal">Let's start a <em>conversation.</em></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3 class="contact-brand">AARAV ESTATES</h3>
+            <p class="contact-sub">Sangli, Maharashtra, India</p>
+            <ul class="contact-list">
+              <li><i class="fa-solid fa-phone"></i><div><span>Phone</span><strong>+91 XXXXX XXXXX</strong><small>Placeholder – add before launch</small></div></li>
+              <li><i class="fa-solid fa-envelope"></i><div><span>Email</span><strong>hello@your-domain.com</strong><small>Placeholder – add before launch</small></div></li>
+              <li><i class="fa-solid fa-location-dot"></i><div><span>Office Address</span><strong>Office address, Sangli, Maharashtra</strong><small>Placeholder – add before launch</small></div></li>
+              <li><i class="fa-regular fa-clock"></i><div><span>Business Hours</span><strong>Mon – Sat: 00:00 AM – 00:00 PM</strong><small>Placeholder – add before launch</small></div></li>
+            </ul>
+            <div class="contact-actions">
+              <button type="button" class="btn btn-whatsapp js-whatsapp" data-wa-message="Hello AARAV ESTATES, I'm interested in your properties. Please share more details.">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </button>
+              <a href="#enquiry" class="btn btn-outline">Send Enquiry</a>
+            </div>
+          </div>
+
+          <div class="map-card reveal">
+            <!-- MAP PLACEHOLDER: shows Sangli city. Replace the src with the office's Google Maps embed URL. -->
+            <iframe title="Map of Sangli, Maharashtra (placeholder)" src="https://www.google.com/maps?q=Sangli,+Maharashtra,+India&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span class="map-tag"><i class="fa-solid fa-circle-info"></i> Map placeholder: city view</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FINAL CTA
+         ========================================================= -->
+    <section class="final-cta" id="final-cta">
+      <div class="final-bg" aria-hidden="true"></div>
+      <div class="container final-content">
+        <p class="eyebrow eyebrow-light reveal">Begin Your Journey</p>
+        <h2 class="reveal">Let's Find Your <em>Next Address.</em></h2>
+        <p class="reveal">Whether you're buying your first home, upgrading your lifestyle or exploring an investment, we're here to help.</p>
+        <div class="hero-actions center reveal">
+          <a href="#properties" class="btn btn-gold btn-lg">Explore Properties</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">Contact Our Team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light" aria-label="AARAV ESTATES home">
+          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M10 50 L32 12 L54 50" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M21 50 V38 H43 V50" fill="none" stroke="currentColor" stroke-width="3"/>
+            <line x1="18" y1="40" x2="46" y2="40" stroke="var(--gold)" stroke-width="3"/>
+          </svg>
+          <span class="logo-text"><strong>AARAV</strong><small>ESTATES</small></span>
+        </a>
+        <p>Finding Spaces. Creating Futures. A Sangli-based real estate developer and property consultancy helping families and investors find the right property.</p>
+        <!-- Social links: replace with the client's real profile URLs -->
+        <div class="socials">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (placeholder link)"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (placeholder link)"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn (placeholder link)"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube (placeholder link)"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Property Categories</h4>
+        <ul>
+          <li><button type="button" class="footer-link" data-show-category="apartment">Apartments</button></li>
+          <li><button type="button" class="footer-link" data-show-category="villa">Villas</button></li>
+          <li><button type="button" class="footer-link" data-show-category="plot">Residential Plots</button></li>
+          <li><button type="button" class="footer-link" data-show-category="commercial">Commercial Spaces</button></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Buying Assistance</a></li>
+          <li><a href="#services">Selling Assistance</a></li>
+          <li><a href="#services">Investment Guidance</a></li>
+          <li><a href="#site-visit">Site Visit Coordination</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Sangli, Maharashtra, India</li>
+          <li><i class="fa-solid fa-phone"></i> +91 XXXXX XXXXX</li>
+          <li><i class="fa-solid fa-envelope"></i> hello@your-domain.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 AARAV ESTATES. All Rights Reserved.</p>
+      <p class="footer-demo">Demo website. Brand, properties, prices, images and testimonials are placeholders.</p>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       PROPERTY DETAILS MODAL
+       ========================================================= -->
+  <div class="modal" id="propertyModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close property details"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-gallery">
+        <div class="modal-main-img">
+          <img id="modalMainImg" alt="">
+          <span class="badge" id="modalStatus"></span>
+        </div>
+        <div class="modal-thumbs" id="modalThumbs"></div>
+      </div>
+      <div class="modal-body">
+        <p class="modal-type" id="modalType"></p>
+        <h2 id="modalTitle"></h2>
+        <p class="modal-loc"><i class="fa-solid fa-location-dot"></i> <span id="modalLocation"></span></p>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+
+        <dl class="modal-specs">
+          <div><dt>Configurations</dt><dd id="modalConfig"></dd></div>
+          <div><dt>Carpet Area</dt><dd id="modalArea"></dd></div>
+          <div><dt>Project Status</dt><dd id="modalStatusText"></dd></div>
+        </dl>
+
+        <h3 class="modal-sub">Amenities</h3>
+        <ul class="amenities" id="modalAmenities"></ul>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-gold" id="modalEnquire">Enquire Now</button>
+          <button type="button" class="btn btn-navy" id="modalVisit">Schedule Site Visit</button>
+        </div>
+        <p class="form-note">Illustrative details and sample pricing for demonstration.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       LIGHTBOX
+       ========================================================= -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button type="button" class="lb-close" id="lbClose" aria-label="Close image viewer"><i class="fa-solid fa-xmark"></i></button>
+    <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+    <figure>
+      <img id="lbImg" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Floating actions -->
+  <button type="button" class="float-wa js-whatsapp" data-wa-message="Hello AARAV ESTATES, I'd like to enquire about a property." aria-label="Enquire on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Toast for small notifications -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
